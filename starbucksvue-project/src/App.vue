@@ -6,7 +6,7 @@
 </script>
 
 <template>
-  <div class="total">
+  <div class="container">
     <Header />
     <Info />
     <Footer />
@@ -14,7 +14,7 @@
 </template>
 
 <style>
-  .total{
+  .container{
     width: 1080px;
   }
 </style>
