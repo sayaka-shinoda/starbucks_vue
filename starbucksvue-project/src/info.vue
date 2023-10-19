@@ -23,6 +23,11 @@
     const alumni_community = ref('Alumni Community')
     const us_careers = ref('U.S. Careers')
     const international = ref('International Careers')
+    // Social Impact
+    const social_impact = ref('Social Impact')
+    const people = ref('People')
+    const planet = ref('Planet')
+    const environmental = ref('Environmental and Social \n Impact Reporting')
 </script>
 
 <template>
@@ -48,11 +53,12 @@
         <div class="info-text">{{ us_careers }}</div>
         <div class="info-text">{{ international }}</div>
     </div>
-    <div class="infoC">
-        <div class="info-title">Social Impact</div>
-        <div class="info-text">People</div>
-        <div class="info-text">Planet</div>
-        <div class="info-text">Environmental and Social<br>Impact Reporting</div>
+    <!-- Social Impact -->
+    <div class="info_social">
+        <div class="info-title">{{ social_impact }}</div>
+        <div class="info-text">{{ people }}</div>
+        <div class="info-text">{{ planet }}</div>
+        <div class="info-text">{{ environmental }}</div>
     </div>
     <div class="infoD">
         <div class="info-title">For Business Partners</div>       
