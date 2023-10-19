@@ -48,55 +48,84 @@
     <!-- About Us -->
     <div class="info_about">
         <div class="info-title">{{ about_us }}</div>
-        <div class="info-text">{{ our_company }}</div>
-        <div class="info-text">{{ our_coffee }}</div>
-        <div class="info-text">{{ stories }}</div>
-        <div class="info-text">{{ starbucks_archive }}</div>
-        <div class="info-text">{{ investor_relations }}</div>
-        <div class="info-text">{{ customer_service }}</div>
-        <div class="info-text">{{ contact_us }}</div>
+        <a href="https://www.starbucks.com/about-us/">
+        <div class="info-text">{{ our_company }}</div></a>
+        <a href="https://www.starbucks.com/coffee/">
+        <div class="info-text">{{ our_coffee }}</div></a>
+        <a href="https://stories.starbucks.com/">
+        <div class="info-text">{{ stories }}</div></a>
+        <a href="https://archive.starbucks.com/">
+        <div class="info-text">{{ starbucks_archive }}</div></a>
+        <a href="https://investor.starbucks.com/ir-home/default.aspx">
+        <div class="info-text">{{ investor_relations }}</div></a>
+        <a href="https://customerservice.starbucks.com/sbux">
+        <div class="info-text">{{ customer_service }}</div></a>
+        <a href="https://www.starbucks.com/contact/">
+        <div class="info-text">{{ contact_us }}</div></a>
     </div>
     <!-- Careers -->
     <div class="info_careers">
         <div class="info-title">{{ careers }}</div>
-        <div class="info-text">{{ culture }}</div>
-        <div class="info-text">{{ inclusion }}</div>
-        <div class="info-text">{{ college }}</div>
-        <div class="info-text">{{ alumni_community }}</div>
-        <div class="info-text">{{ us_careers }}</div>
-        <div class="info-text">{{ international }}</div>
+        <a href="https://www.starbucks.com/careers/working-at-starbucks/culture-and-values/">
+        <div class="info-text">{{ culture }}</div></a>
+        <a href="https://stories.starbucks.com/stories/inclusion-diversity/">
+        <div class="info-text">{{ inclusion }}</div></a>
+        <a href="https://www.starbucks.com/careers/working-at-starbucks/education/">
+        <div class="info-text">{{ college }}</div></a>
+        <a href="https://alumni.starbucks.com/login/">
+        <div class="info-text">{{ alumni_community }}</div></a>
+        <a href="https://www.starbucks.com/careers/">
+        <div class="info-text">{{ us_careers }}</div></a>
+        <a href="https://www.starbucks.com/careers/international-careers/">
+        <div class="info-text">{{ international }}</div></a>
     </div>
     <!-- Social Impact -->
     <div class="info_social">
         <div class="info-title">{{ social_impact }}</div>
-        <div class="info-text">{{ people }}</div>
-        <div class="info-text">{{ planet }}</div>
-        <div class="info-text">{{ environmental }}</div>
+        <a href="https://www.starbucks.com/responsibility/people/">
+        <div class="info-text">{{ people }}</div></a>
+        <a href="https://www.starbucks.com/responsibility/planet/">
+        <div class="info-text">{{ planet }}</div></a>
+        <a href="https://www.starbucks.com/responsibility/reporting-hub/">
+        <div class="info-text">{{ environmental }}</div></a>
     </div>
     <!-- For Business Partners -->
     <div class="info_partners">
         <div class="info-title">{{ business_partners }}</div>
-        <div class="info-text">{{ landlord }}</div>
-        <div class="info-text">{{ suppliers }}</div>
-        <div class="info-text">{{ corporate }}</div>
-        <div class="info-text">{{ office }}</div>
+        <a href="https://www.starbucks.com/business/landlord-faq/">
+        <div class="info-text">{{ landlord }}</div></a>
+        <a href="https://www.starbucks.com/business/suppliers/">
+        <div class="info-text">{{ suppliers }}</div></a>
+        <a href="https://www.starbuckscardb2b.com/s/">
+        <div class="info-text">{{ corporate }}</div></a>
+        <a href="https://www.nestlecoffeepartnerssl.com/our-brands/we-proudly-serve-starbucks-coffee-program">
+        <div class="info-text">{{ office }}</div></a>
     </div>
     <!-- Order and Pick Up -->
     <div class="info_order">
         <div class="info-title">{{ pick_up }}</div>
-        <div class="info-text">{{ order_app }}</div>
-        <div class="info-text">{{ order_web }}</div>
-        <div class="info-text">{{ delivery }}</div>
-        <div class="info-text">{{ order_options }}</div>
-        <div class="info-text">{{ Explore }}</div>
+        <a href="https://www.starbucks.com/rewards/mobile-apps/">
+        <div class="info-text">{{ order_app }}</div></a>
+        <a href="https://www.starbucks.com/menu">
+        <div class="info-text">{{ order_web }}</div></a>
+        <a href="https://www.starbucks.com/ways-to-order/delivery/">
+        <div class="info-text">{{ delivery }}</div></a>
+        <a href="https://www.starbucks.com/ways-to-order/">
+        <div class="info-text">{{ order_options }}</div></a>
+        <a href="https://athome.starbucks.com/?utm_source=starbucks.com&utm_medium=referral&utm_campaign=footer">
+        <div class="info-text">{{ Explore }}</div></a>
     </div>
     </div>
     <!-- bottom menu -->
     <div class="subInfo">
-        <div class="subinfo-text">{{ privacy }}</div>
-        <div class="subinfo-text">{{ terms }}</div>
-        <div class="subinfo-text">{{ do_not }}</div>
-        <div class="subinfo-text">{{ ca_supply }}</div>
+        <a href="https://www.starbucks.com/terms/privacy-policy/">
+        <div class="subinfo-text">{{ privacy }}</div></a>
+        <a href="https://www.starbucks.com/terms/starbucks-terms-of-use/">
+        <div class="subinfo-text">{{ terms }}</div></a>
+        <a href="https://www.starbucks.com/personal-information">
+        <div class="subinfo-text">{{ do_not }}</div></a>
+        <a href="https://globalassets.starbucks.com/assets/A2A072E3411C4A6ABAEB8D6BCF286F43.pdf">
+        <div class="subinfo-text">{{ ca_supply }}</div></a>
         <div class="subinfo-text">{{ cookie }}</div>
     </div>
 </template>
