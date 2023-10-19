@@ -34,6 +34,13 @@
     const suppliers = ref('Suppliers')
     const corporate = ref('Corporate Gift Card Sales')
     const office = ref('Office and Foodservice \n Coffee')
+    // Order and Pick Up
+    const pick_up = ref('Order and Pick Up')
+    const order_app = ref('Order on the App')
+    const order_web = ref('Order on the Web')
+    const delivery = ref('Delivery')
+    const order_options = ref('Order and Pick Up \n Options')
+    const Explore = ref('Explore and Find Coffee \n for Home')
 </script>
 
 <template>
@@ -74,13 +81,14 @@
         <div class="info-text">{{ corporate }}</div>
         <div class="info-text">{{ office }}</div>
     </div>
-    <div class="infoE">
-        <div class="info-title">Order and Pick Up</div>
-        <div class="info-text">Order on the App</div>
-        <div class="info-text">Order on the Web</div>
-        <div class="info-text">Delivery</div>
-        <div class="info-text">Order and Pick Up<br>Options</div>
-        <div class="info-text">Explore and Find Coffee<br>for Home</div>
+    <!-- Order and Pick Up -->
+    <div class="info_order">
+        <div class="info-title">{{ pick_up }}</div>
+        <div class="info-text">{{ order_app }}</div>
+        <div class="info-text">{{ order_web }}</div>
+        <div class="info-text">{{ delivery }}</div>
+        <div class="info-text">{{ order_options }}</div>
+        <div class="info-text">{{ Explore }}</div>
     </div>
     </div>
     <!-- bottom menu -->
