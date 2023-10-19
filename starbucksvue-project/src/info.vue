@@ -1,10 +1,11 @@
 <script setup>
     import{ ref } from 'vue'
-    const subinfoA = ref('Privacy Notice')
-    const subinfoB = ref('Terms of Use')
-    const subinfoC = ref('Do Not Share My Personal Information')
-    const subinfoD = ref('CA Supply Chain Act')
-    const subinfoE = ref('Cookie Preferences')
+    // bottom menu
+    const privacy = ref('Privacy Notice')
+    const terms = ref('Terms of Use')
+    const do_not = ref('Do Not Share My Personal Information')
+    const ca_supply = ref('CA Supply Chain Act')
+    const cookie = ref('Cookie Preferences') 
 </script>
 
 <template>
@@ -19,12 +20,12 @@
         <div class="info-text">Customer Service</div>
         <div class="info-text">Contact Us</div>
     </div>
-<div class="infoB">
+<div class="infoB">  
         <div class="info-title">Careers</div>
         <div class="info-text">Culture and Values</div>
         <div class="info-text">Inclusion, Diversity, and<br>Equity</div>
         <div class="info-text">College Achievement<br>Plan</div>
-        <div class="info-text">U.S. Careers</div>
+        <div class="info-text">U.S. Careers</div> 
         <div class="info-text">International Careers</div>
     </div>
     <div class="infoC">
@@ -34,7 +35,7 @@
         <div class="info-text">Environmental and Social<br>Impact Reporting</div>
     </div>
     <div class="infoD">
-        <div class="info-title">For Business Partners</div>
+        <div class="info-title">For Business Partners</div>       
         <div class="info-text">Landlord Support Center</div>
         <div class="info-text">Suppliers</div>
         <div class="info-text">Corporate Gift Card Sales</div>
@@ -49,12 +50,13 @@
         <div class="info-text">Explore and Find Coffee<br>for Home</div>
     </div>
     </div>
+    <!-- bottom menu -->
     <div class="subInfo">
-        <div class="subinfo-text">{{ subinfoA }}</div>
-        <div class="subinfo-text">{{ subinfoB }}</div>
-        <div class="subinfo-text">{{ subinfoC }}</div>
-        <div class="subinfo-text">{{ subinfoD }}</div>
-        <div class="subinfo-text">{{ subinfoE }}</div>
+        <div class="subinfo-text">{{ privacy }}</div>
+        <div class="subinfo-text">{{ terms }}</div>
+        <div class="subinfo-text">{{ do_not }}</div>
+        <div class="subinfo-text">{{ ca_supply }}</div>
+        <div class="subinfo-text">{{ cookie }}</div>
     </div>
 </template>
 
