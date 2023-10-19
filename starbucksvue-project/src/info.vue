@@ -28,6 +28,12 @@
     const people = ref('People')
     const planet = ref('Planet')
     const environmental = ref('Environmental and Social \n Impact Reporting')
+    // For Business Partners
+    const business_partners = ref('For Business Partners')
+    const landlord = ref('Landlord Support Center')
+    const suppliers = ref('Suppliers')
+    const corporate = ref('Corporate Gift Card Sales')
+    const office = ref('Office and Foodservice \n Coffee')
 </script>
 
 <template>
@@ -60,12 +66,13 @@
         <div class="info-text">{{ planet }}</div>
         <div class="info-text">{{ environmental }}</div>
     </div>
-    <div class="infoD">
-        <div class="info-title">For Business Partners</div>       
-        <div class="info-text">Landlord Support Center</div>
-        <div class="info-text">Suppliers</div>
-        <div class="info-text">Corporate Gift Card Sales</div>
-        <div class="info-text">Office and Foodservice<br>Coffee</div>
+    <!-- For Business Partners -->
+    <div class="info_partners">
+        <div class="info-title">{{ business_partners }}</div>
+        <div class="info-text">{{ landlord }}</div>
+        <div class="info-text">{{ suppliers }}</div>
+        <div class="info-text">{{ corporate }}</div>
+        <div class="info-text">{{ office }}</div>
     </div>
     <div class="infoE">
         <div class="info-title">Order and Pick Up</div>
