@@ -15,6 +15,14 @@
     const investor_relations = ref('Investor Relations')^M
     const customer_service = ref('Customer Service')^M
     const contact_us = ref('Contact Us')
+    // Careers
+    const careers = ref('Careers')
+    const culture = ref('Culture and Values') 
+    const inclusion = ref('Inclusion, Diversity, and \n Equity')
+    const college = ref('College Achievement \n Plan')
+    const alumni_community = ref('Alumni Community')
+    const us_careers = ref('U.S. Careers')
+    const international = ref('International Careers')
 </script>
 
 <template>
@@ -30,13 +38,15 @@
         <div class="info-text">{{ customer_service }}</div>
         <div class="info-text">{{ contact_us }}</div>
     </div>
-<div class="infoB">  
-        <div class="info-title">Careers</div>
-        <div class="info-text">Culture and Values</div>
-        <div class="info-text">Inclusion, Diversity, and<br>Equity</div>
-        <div class="info-text">College Achievement<br>Plan</div>
-        <div class="info-text">U.S. Careers</div> 
-        <div class="info-text">International Careers</div>
+    <!-- Careers -->
+    <div class="info_careers">
+        <div class="info-title">{{ careers }}</div>
+        <div class="info-text">{{ culture }}</div>
+        <div class="info-text">{{ inclusion }}</div>
+        <div class="info-text">{{ college }}</div>
+        <div class="info-text">{{ alumni_community }}</div>
+        <div class="info-text">{{ us_careers }}</div>
+        <div class="info-text">{{ international }}</div>
     </div>
     <div class="infoC">
         <div class="info-title">Social Impact</div>
