@@ -6,19 +6,29 @@
     const do_not = ref('Do Not Share My Personal Information')
     const ca_supply = ref('CA Supply Chain Act')
     const cookie = ref('Cookie Preferences') 
+    // About Us
+    const about_us = ref('About Us')^M
+    const our_company = ref('Our Company')^M
+    const our_coffee = ref('Our Coffee')^M
+    const stories = ref('Stories and News')^M
+    const starbucks_archive = ref('Starbucks Archive')^M
+    const investor_relations = ref('Investor Relations')^M
+    const customer_service = ref('Customer Service')^M
+    const contact_us = ref('Contact Us')
 </script>
 
 <template>
     <div class="Info" width="100%">
-    <div class="infoA">
-        <div class="info-title">About Us</div>
-        <div class="info-text">Our Company</div>
-        <div class="info-text">Our Coffee</div>
-        <div class="info-text">Stories and News</div>
-        <div class="info-text">Starbucks Archive</div>
-        <div class="info-text">Investor Relations</div>
-        <div class="info-text">Customer Service</div>
-        <div class="info-text">Contact Us</div>
+    <!-- About Us -->
+    <div class="info_about">
+        <div class="info-title">{{ about_us }}</div>
+        <div class="info-text">{{ our_company }}</div>
+        <div class="info-text">{{ our_coffee }}</div>
+        <div class="info-text">{{ stories }}</div>
+        <div class="info-text">{{ starbucks_archive }}</div>
+        <div class="info-text">{{ investor_relations }}</div>
+        <div class="info-text">{{ customer_service }}</div>
+        <div class="info-text">{{ contact_us }}</div>
     </div>
 <div class="infoB">  
         <div class="info-title">Careers</div>
