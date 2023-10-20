@@ -28,7 +28,7 @@
     <div class="content">
     <!-- HBD PSL -->
     <div class="first_content">
-    <div class="mainimgA"><img src="@/assets/mainA.jpg" alt="content" class="first_content_img"></div>
+    <div class="mainimgA"><img src="@/assets/hbd_psl.jpg" alt="content" class="first_content_img"></div>
     <div class="first_content_text">
         <h1><font color="white">{{ hbd_psl }}</font></h1>
         <p><font color="white">{{ hbd_text }}</font></p>
@@ -42,11 +42,11 @@
         <p><font color="white">{{ pumpkin_text }}</font></p>
         <a class="pumpkin_btn" href="https://www.starbucks.com/menu/product/2123774/iced">{{ pumpkin_button }}</a>
     </div>
-    <div class="mainimgB"><img src="@/assets/mainB.jpg" alt="content" class="second_content_img"></div>
+    <div class="mainimgB"><img src="@/assets/pumpkin_forever.jpg" alt="content" class="second_content_img"></div>
     </div>
     <!-- We’re celebrating PSL’s birthday.Yours is next! -->
     <div class="third_content">
-    <div class="mainimgC"><img src="@/assets/mainC.jpg" alt="content" class="third_content_img"></div>    
+    <div class="mainimgC"><img src="@/assets/birthday.jpg" alt="content" class="third_content_img"></div>    
     <div class="third_content_text">
         <h1><font color="white">{{ birthday }}</font></h1>
         <p><font color="white">{{ birthday_text }}</font></p>
@@ -60,11 +60,11 @@
         <p>{{ spice_text }}</p>
         <a class="spice_btn" href="https://www.starbucks.com/menu/product/2123236/single">{{ spice_button }}</a>
     </div>   
-    <div class="mainimgD"><img src="@/assets/mainD.jpg" alt="content" class="fourth_content_img"></div> 
+    <div class="mainimgD"><img src="@/assets/spice.jpg" alt="content" class="fourth_content_img"></div> 
     </div>
     <!-- Pumpkin spice, delivered so nice -->
     <div class="fifth_content">
-    <div class="mainimgE"><img src="@/assets/mainE.jpg" alt="content" class="fifth_content_img"></div> 
+    <div class="mainimgE"><img src="@/assets/delivered.jpg" alt="content" class="fifth_content_img"></div> 
     <div class="fifth_content_text">
         <h1><font color="white">{{ delivered }}</font></h1>
         <p><font color="white">{{ delivered_text }}</font></p>
