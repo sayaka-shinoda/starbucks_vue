@@ -1,19 +1,13 @@
 <script setup>
-    import{ ref } from 'vue'
-    // bottom menu
-    const privacy = ref('Privacy Notice')
-    const terms = ref('Terms of Use')
-    const do_not = ref('Do Not Share My Personal Information')
-    const ca_supply = ref('CA Supply Chain Act')
-    const cookie = ref('Cookie Preferences') 
+    import{ ref } from 'vue' 
     // About Us
-    const about_us = ref('About Us')^M
-    const our_company = ref('Our Company')^M
-    const our_coffee = ref('Our Coffee')^M
-    const stories = ref('Stories and News')^M
-    const starbucks_archive = ref('Starbucks Archive')^M
-    const investor_relations = ref('Investor Relations')^M
-    const customer_service = ref('Customer Service')^M
+    const about_us = ref('About Us')
+    const our_company = ref('Our Company')
+    const our_coffee = ref('Our Coffee')
+    const stories = ref('Stories and News')
+    const starbucks_archive = ref('Starbucks Archive')
+    const investor_relations = ref('Investor Relations')
+    const customer_service = ref('Customer Service')
     const contact_us = ref('Contact Us')
     // Careers
     const careers = ref('Careers')
@@ -41,6 +35,12 @@
     const delivery = ref('Delivery')
     const order_options = ref('Order and Pick Up \n Options')
     const Explore = ref('Explore and Find Coffee \n for Home')
+    // bottom menu
+    const privacy = ref('Privacy Notice')
+    const terms = ref('Terms of Use')
+    const do_not = ref('Do Not Share My Personal Information')
+    const ca_supply = ref('CA Supply Chain Act')
+    const cookie = ref('Cookie Preferences')
 </script>
 
 <template>
