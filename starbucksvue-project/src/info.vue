@@ -141,6 +141,10 @@
     }
    .info-text{
         margin: 20px 30px;
+        color: rgb(107 107 107);
+   }
+   .info-text:hover{
+        color: rgb(33, 33, 33);
    }
     .subInfo{
         display: flex;
