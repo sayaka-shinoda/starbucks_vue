@@ -33,6 +33,13 @@
 </template>
 
 <style>
+a{
+    color: #212121;
+}
+a:hover{
+    color: #00754A;
+    background-color: transparent;
+}    
 .header{
     width: 100%;
     margin: 50px 50px;
