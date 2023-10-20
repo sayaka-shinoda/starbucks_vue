@@ -1,28 +1,29 @@
 <script setup>
     import{ ref } from 'vue'
-    const headermenuA = ref('MENU')
-    const headermenuB = ref('REWARDS')
-    const headermenuC = ref('GIFT CARDS')
-    const headermenuD = ref('Find a store')
-    const headermenuE = ref('Sign in')
-    const headermenuF = ref('Join now')
+    const header_menu = ref('MENU')
+    const header_rewards = ref('REWARDS')
+    const header_giftcards = ref('GIFT CARDS')
+    const header_findastore = ref('Find a store')
+    const header_signin = ref('Sign in')
+    const header_joinnow = ref('Join now')
 </script>
 
 <template>
     <div class="header">
+    <!-- Logo,MENU,REWARDS,GIFT CARDS -->
     <div class="header-left">
         <img src="@/assets/logo.png" alt="Logo" class="header_logo">
-        <div class="leftMenu">{{ headermenuA }}</div>
-        <div class="leftMenu">{{ headermenuB }}</div>
-        <div class="leftMenu">{{ headermenuC }}</div>
+        <div class="header_leftItem">{{ header_menu }}</div>
+        <div class="header_leftItem">{{ header_rewards }}</div>
+        <div class="header_leftItem">{{ header_giftcards }}</div>
         </div>
+    <!-- Find a store,Sign in,join now -->
     <div class="header-right">
-        <div class="rightMenu">{{ headermenuD }}</div>
-        <div class="rightMenu">{{ headermenuE }}</div>
-        <div class="rightMenu">{{ headermenuF }}</div>
+        <div class="header_rightItem">{{ header_findastore }}</div>
+        <div class="header_rightItem signin_btn">{{ header_signin }}</div>
+        <div class="header_rightItem joinnow_btn">{{ header_joinnow }}</div>
         </div>
     </div>
-
 </template>
 
 <style>
@@ -33,13 +34,9 @@
 .header-left{
     display: flex;
 }
-.leftMenu,.rightMenu{
+.header_leftItem,.header_rightItem{
     margin: 10px 20px;
     font-family: SoDoSans;
     font-weight: bold;
-}
-.header-right{
-    display: flex;
-    float: right;
 }
 </style>
