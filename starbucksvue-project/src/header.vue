@@ -44,6 +44,10 @@ a:hover{
     width: 100%;
     margin: 50px 50px;
 }
+.header-right{
+    display: flex;
+    float: right;
+}
 .header-left{
     display: flex;
 }
@@ -51,5 +55,34 @@ a:hover{
     margin: 10px 20px;
     font-family: SoDoSans;
     font-weight: bold;
+}
+.signin_btn{
+    border: 1px solid black;
+    border-radius: 100px;
+    display: block;
+    width: 80px;
+    padding: 2px;
+    box-sizing: border-box;
+    background-color: white;
+    text-align: center;
+    margin: 10px 0;
+}
+.signin_btn:hover{
+    background-color: gainsboro;
+}
+.joinnow_btn{
+    border: 1px solid black;
+    border-radius: 100px;
+    display: block;
+    width: 80px;
+    padding: 2px;
+    box-sizing: border-box;
+    color: white;
+    background-color: black;
+    text-align: center;
+    margin: 10px 10px;
+}
+.joinnow_btn:hover{
+    background-color: #404040;
 }
 </style>
