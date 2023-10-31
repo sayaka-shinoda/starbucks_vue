@@ -167,27 +167,29 @@
     </details>
     </div>
     <!-- bottom menu -->
-    <div class="subInfo">
-        <a href="https://www.starbucks.com/terms/privacy-policy/">
-        <div class="subinfo-text">{{ privacy }}</div></a>
-        <a href="https://www.starbucks.com/terms/starbucks-terms-of-use/">
-        <div class="subinfo-text">{{ terms }}</div></a>
-        <a href="https://www.starbucks.com/personal-information">
-        <div class="subinfo-text">{{ do_not }}</div></a>
-        <a href="https://globalassets.starbucks.com/assets/A2A072E3411C4A6ABAEB8D6BCF286F43.pdf">
-        <div class="subinfo-text">{{ ca_supply }}</div></a>
-        <div class="subinfo-text">{{ cookie }}</div>
+    <div class="subinfo">
+        <ul>
+        <li class="subinfo-text"><a href="https://www.starbucks.com/terms/privacy-policy/">
+        {{ privacy }}</a></li>
+        <li class="subinfo-text"><a href="https://www.starbucks.com/terms/starbucks-terms-of-use/">
+        {{ terms }}</a></li>
+        <li class="subinfo-text"><a href="https://www.starbucks.com/personal-information">
+        {{ do_not }}</a></li>
+        <li class="subinfo-text"><a href="https://globalassets.starbucks.com/assets/A2A072E3411C4A6ABAEB8D6BCF286F43.pdf">
+        {{ ca_supply }}</a></li>
+        <li class="subinfo-text">{{ cookie }}</li>
+        </ul>
     </div>
     </div>
 </template>
 
-<style>
+<style scoped>
     *{
         font-family: SoDoSans;
     }
     .info{
         width: 100%;
-        margin: 50px 0;
+        margin: 30px 0;
     }
     .info_pc{
         display: flex;
@@ -198,16 +200,27 @@
     }
    .info-text{
         margin: 20px 30px;
-        color: rgb(107 107 107);
+        color: rgb(118, 118, 118);
    }
    .info-text:hover{
         color: rgb(33, 33, 33);
    }
-    .subInfo{
-        display: flex;
+    .subinfo ul{
+        padding-left: 0;
+        list-style: none;
+        display: inline-block;
     }
-    .subinfo-text{
-        margin: 20px 30px;
+    .subinfo li{
+        color: black;
+        text-align: left;
+        height: 30px;
+        padding: 1.5em 2em;
+    }
+    li:hover{
+        text-decoration: underline;
+    }
+    .subinfo a{
+        color: black;
     }
     /* mobile */
     @media screen and (max-width:375px){
@@ -215,51 +228,51 @@
             display: none;
         }
         .accordion_menu{
-        max-width: 100%;
-        margin-bottom: 7px;            
+            max-width: 100%;
+            margin-bottom: 7px;            
         }
         /* title */
         .accordion_menu summary {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: relative;
-        padding: 1.5em 2em;
-        color: #333333;
-        cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            padding: 1.5em 2em;
+            color: #333333;
+            cursor: pointer;
         }
         .accordion_menu summary::-webkit-details-marker {
-        display: none;
+            display: none;
         }
         /* accordion menu open */
         .accordion_menu summary::after {
-        transform: rotate(45deg);
-        width: 10px;
-        height: 10px;
-        margin-left: 10px;
-        border-bottom: 3px solid #333333b3;
-        border-right: 3px solid #333333b3;
-        content: '';
-        transition: transform .3s;
+            transform: rotate(45deg);
+            width: 10px;
+            height: 10px;
+            margin-left: 10px;
+            border-bottom: 3px solid #333333b3;
+            border-right: 3px solid #333333b3;
+            content: '';
+            transition: transform .3s;
         }
         /* accordion menu open mark */
         .accordion_menu[open] summary::after {
-        transform: rotate(225deg);
+            transform: rotate(225deg);
         }
         .accordion_menu p {
-        transform: translateY(-10px);
-        opacity: 0;
-        margin: 0;
-        padding: 1em 2em 1.5em;
-        transition: transform .5s, opacity .5s;
+            transform: translateY(-10px);
+            opacity: 0;
+            margin: 0;
+            padding: 1em 2em 1.5em;
+            transition: transform .5s, opacity .5s;
         }
         .accordion_menu[open] p {
-        transform: translate;
-        transition: transform .5s;
-        opacity: 1;
+            transform: translate;
+            transition: transform .5s;
+            opacity: 1;
         }
         .accordion_menu a{
-            color: rgb(107 107 107);
+            color: rgb(118, 118, 118);
         }
         .accordion_menu a:hover{
             color: black;
@@ -269,6 +282,21 @@
     @media screen and (min-width:376px){
         .mobilemenu_accordion{
             display: none;
+        }
+        .info_pc{
+            width: auto;
+        }
+        .subinfo ul{
+            list-style-type: none;
+            margin: 20px auto 0;
+            text-align:center;
+        }
+        .subinfo li{
+            float:left;
+            padding: 0 10px 0 10px;}
+        .subinfo li + li {
+            border-left: 1px solid #333;
+            padding: 0 10px 0 10px;
         }
     }
 </style>
