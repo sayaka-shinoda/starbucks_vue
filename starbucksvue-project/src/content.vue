@@ -9,7 +9,7 @@
     const pumpkin_text = ref('Let the nostalgia begin. Enjoy a \n steamy creamy Pumpkin Spice \n Latte topped with pumpkin-pie \n spices.')
     const pumpkin_button = ref('Order now')
     // We’re celebrating PSL’s birthday.Yours is next!
-    const birthday = ref('We’re celebrating PSL’s birthday. \n Yours is next!')
+    const birthday = ref('We’re celebrating PSL’s birthday.Yours is \n next!')
     const birthday_text = ref('Join Starbucks® Rewards and enjoy a free \n drink on your birthday every year.*')
     const birthday_button = ref('Join now')
     // Twice the spice
@@ -53,7 +53,7 @@
     <div class="third_content_text">
         <h1><font color="white">{{ birthday }}</font></h1>
         <p><font color="white">{{ birthday_text }}</font></p>
-        <p class="birthday_btn">{{ birthday_button  }}</p>
+        <a class="birthday_btn" href="https://www.starbucks.com/account/create">{{ birthday_button  }}</a>
     </div>
     </div>
     <!-- Twice the spice -->
@@ -79,7 +79,7 @@
     </div>
 </template>
 
-<style>
+<style scoped>
     .first_content,.second_content,.third_content,.fourth_content,.fifth_content{
         display: flex;
         margin: 30px;
@@ -94,31 +94,37 @@
     }
     .first_content_text{
         width: 600px;
-        height: 530px;
+        height: 520px;
+        padding: 100px;
         text-align: center;
         background-color: #006241;
     }
     .second_content_text{
         width: 600px;
-        height: 530px;
+        height: 520px;
+        padding: 100px;
         text-align: center;
         background-color: rgb(176 74 90);
     }
     .third_content_text{
-        width: 600px;
-        height: 530px;
+        width: 700px;
+        height: 233px;
         text-align: center;
         background-color: rgb(30 57 50);
     }
+    .third_content_text h1{
+        font-size: 25px;
+    }
     .fourth_content_text{
         width: 600px;
-        height: 530px;
+        height: 520px;
+        padding: 100px;
         text-align: center;
         background-color: rgb(214 154 45);
     }
     .fifth_content_text{
         width: 600px;
-        height: 360px;
+        height: 350px;
         text-align: center;
         background-color: rgb(30 57 50);
     }
@@ -132,7 +138,7 @@
         color: white;
         background-color: #006241;
         text-align: center;
-        margin: 100px 210px;
+        margin: 50px 110px;
 }
 .hbd_btn:hover{
         color: white;
@@ -148,7 +154,7 @@
         color: white;
         background-color: rgb(176 74 90);
         text-align: center;
-        margin: 100px 230px;
+        margin: 50px 130px;
 }
     .pumpkin_btn:hover{
         color: white;
@@ -164,13 +170,13 @@
         color: black;
         background-color: rgb(214 154 45);
         text-align: center;
-        margin: 100px 230px;
+        margin: 50px 110px;
     }
     .spice_btn:hover{
         color: black;
         background-color: hsl(39, 67%, 43%);
     }
-    .delivered_btn{
+    .birthday_btn,.delivered_btn{
         border: 1px solid white;
         border-radius: 100px;
         display: block;
@@ -180,9 +186,9 @@
         color: white;
         background-color: rgb(30 57 50);
         text-align: center;
-        margin: 100px 230px;
+        margin: 30px 230px;
     }
-    .delivered_btn:hover{
+    .birthday_btn:hover,.delivered_btn:hover{
         color: white;
         background-color: rgb(24 46 40);
     }
@@ -194,38 +200,42 @@
         white-space: pre-line;
     }
     h1{
-        margin: 40px 10px;
+        font-family: SoDoSans;
+        font-size: 45px;
     }
     p{
-        margin: 50px 10px;
+        margin: 20px 0;
     }
     /* mobile */
-        @media screen and (max-width:375px){
-        .first_content,.second_content,.third_content,.fourth_content,.fifth_content{
-            flex-flow: column;
-        }
-        .second_content,.fourth_content{
-            flex-direction: column-reverse;
-        }
-        .first_content_img,.second_content_img,.third_content_img,.fourth_content_img,.fifth_content_img{
-            width: 100% ;
-        }
-        .first_content_text,.second_content_text,.third_content_text,.fourth_content_text,.fifth_content_text{
-            width: 100%;
-        }
-        .first_content_text,.second_content_text,.fourth_content_text{
-            height: 600px;
-        }
-        .third_content_text,.fifth_content_text{
-            height: 500px;
-        }
-        .Benefits-text{
-            text-align: center;
-            margin: auto;
-        }
+    @media screen and (max-width:375px){
+    .first_content,.second_content,.third_content,.fourth_content,.fifth_content{
+        flex-flow: column;
+    }
+    .second_content,.fourth_content{
+        flex-direction: column-reverse;
+    }
+    .first_content_img,.second_content_img,.third_content_img,.fourth_content_img,.fifth_content_img{
+        width: 100%;
+    }
+    .first_content_text,.second_content_text,.third_content_text,.fourth_content_text,.fifth_content_text{
+        width: 100%;
+    }
+    .first_content_text,.second_content_text,.fourth_content_text{
+        height: 600px;
+    }
+    .third_content_text,.fifth_content_text{
+        height: 500px;
+    }
+    .hbd_btn,.pumpkin_btn,.birthday_btn,.spice_btn,.delivered_btn{
+        margin: auto;
+    }
+    .Benefits-text{
+        text-align: center;
+        margin: auto;
+    }
     }
     /* pc */
-        @media screen and (min-width:1200px) {
+    @media screen and (min-width:1200px) {
 
-        }
+    }
 </style>
