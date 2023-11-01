@@ -166,6 +166,15 @@
         <p><a href="https://athome.starbucks.com/?utm_source=starbucks.com&utm_medium=referral&utm_campaign=footer">Explore and Find Coffee for Home</a></p>
     </details>
     </div>
+    <!-- SNS icon -->
+    <ul style="list-style: none;" class="sns_icon">
+        <li><a href="https://open.spotify.com/user/starbucks"><img src="@/assets/spotify_icon.svg" alt="Spotify"></a></li>
+        <li><a href="https://www.facebook.com/Starbucks/"><img src="@/assets/facebook_icon.svg" alt="Facebook"></a></li>
+        <li><a href="https://www.pinterest.com/starbucks/"><img src="@/assets/pinterest_icon.svg" alt="Pinterest"></a></li>
+        <li><a href="https://instagram.com/starbucks"><img src="@/assets/instagram_icon.svg" alt="Instagram"></a></li>
+        <li><a href="https://www.youtube.com/starbucks"><img src="@/assets/youtube_icon.svg" alt="Youtube"></a></li>
+        <li><a href="https://twitter.com/starbucks/"><img src="@/assets/twitter_icon.svg" alt="Twitter"></a></li>
+    </ul>    
     <!-- bottom menu -->
     <div class="subinfo">
         <ul>
@@ -205,6 +214,17 @@
    .info-text:hover{
         color: rgb(33, 33, 33);
    }
+   /* SNS icon */
+   .sns_icon{
+        display: flex;
+        margin: 30px 0;
+   }
+   .sns_icon img{
+        width: 35px;
+        height: 35px;
+        margin-right: 15px;
+   }
+   /* bottom menu */
     .subinfo ul{
         padding-left: 0;
         list-style: none;
