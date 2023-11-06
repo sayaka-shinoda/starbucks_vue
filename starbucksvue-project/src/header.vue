@@ -26,11 +26,13 @@
     </div>
     <!-- mobile menu-->
     <div class="mobile_menu">
-        <input type="checkbox" id="mobilemenu_check">
-        <label for="mobilemenu_check" class="mobilemenu_box">
-            <span></span>
+        <input id="mobilemenu_Checkbox" type="checkbox" class="mobilemenu_input">
+        <label for="mobilemenu_Checkbox" class="hamburgermenu_btn">
+            <span class="hamburgermenu_line"></span>
         </label>
+        <label for="mobilemenu_Checkbox" class="mobilemenu-background"></label>
     <div class="mobilemenu_content">
+    <!-- MENU,REWARDS,GIFT CARDS -->
         <ul class="mobilemenu_list">
         <li class="mobilemenu_item">
             <a class="mobilemenu__link" href="https://www.starbucks.com/menu"><div class="header_leftItem">{{ header_menu }}</div></a>
@@ -41,16 +43,16 @@
         <li class="mobilemenu_item">
             <a class="mobilemenu__link" href="https://www.starbucks.com/gift"><div class="header_leftItem">{{ header_giftcards }}</div></a>
         </li>
-        <li class="mobilemenu_item">
-            <a class="mobilemenu__link" href="https://www.starbucks.com/store-locator" ><div class="header_leftItem">{{ header_findastore }}</div></a>
-        </li>  
-        <li class="mobilemenu_item">
-            <a class="mobilemenu__link" href="https://www.starbucks.com/account/signin?ReturnUrl=%2F"><div class="header_leftItem signin_mobile_btn">{{ header_signin }}</div></a>
-        </li>
-        <li class="mobilemenu_item">
-            <a class="mobilemenu__link" href="https://www.starbucks.com/account/create"><div class="header_leftItem joinnow_mobile_btn">{{ header_joinnow }}</div></a>    
-        </li>
         </ul>
+    <!-- line -->
+        <hr>
+    <!-- Sign in,Join now -->
+        <div class="mobilemenu_btn">
+            <a href="https://www.starbucks.com/account/signin?ReturnUrl=%2F"><div class="signin_mobile_btn">{{ header_signin }}</div></a>
+            <a href="https://www.starbucks.com/account/create"><div class="joinnow_mobile_btn">{{ header_joinnow }}</div></a>   
+        </div>
+    <!-- Find a store -->
+            <a class="find_a_store" href="https://www.starbucks.com/store-locator" ><img src="@/assets/map_icon.svg" alt="map" class="map_icon">{{ header_findastore }}</a>
     </div>
     </div>
     </div>
@@ -88,7 +90,7 @@ a{
     border: 1px solid black;
     border-radius: 100px;
     display: block;
-    width: 80px;
+    width: 95px;
     padding: 2px;
     box-sizing: border-box;
     color: white;
@@ -112,7 +114,11 @@ a{
     .pc_menu{
         display: none;
     }
-    .mobilemenu_box {
+    *{
+        font-size: large;
+    }
+    /* hamburger menu button */
+    .hamburgermenu_btn {
         position: fixed;
         top: 0;
         right: 0;
@@ -125,65 +131,100 @@ a{
         background: transparent;
     }
     /* theree line button */
-    .mobilemenu_box span,
-    .mobilemenu_box span:before,
-    .mobilemenu_box span:after {
+    .hamburgermenu_btn span,
+    .hamburgermenu_btn span:before,
+    .hamburgermenu_btn span:after {
         content: "";
         display: block;
-        height: 3px;
         width: 25px;
+        height: 3px;
         border-radius: 3px;
         background: black;
         position: absolute;
+        transition: .3s;
     }
-    .mobilemenu_box span:before {
+    .hamburgermenu_btn span:before {
         bottom: 8px;
     }
-    .mobilemenu_box span:after {
+    .hamburgermenu_btn span:after {
         top: 8px;
     }
-    #mobilemenu_check {
+    #mobilemenu_Checkbox {
         display: none;
     }
-    #mobilemenu_check:checked ~ .mobilemenu_box span {
+    #mobilemenu_Checkbox:checked ~ .hamburgermenu_btn span {
         background: rgba(255, 255, 255, 0);
     }
-    #mobilemenu_check:checked ~ .mobilemenu_box span::before {
+    #mobilemenu_Checkbox:checked ~ .hamburgermenu_btn span::before {
         bottom: 0;
         transform: rotate(45deg);
     }
-    #mobilemenu_check:checked ~ .mobilemenu_box span::after{
+    #mobilemenu_Checkbox:checked ~ .hamburgermenu_btn span::after{
         top: 0;
         transform: rotate(-45deg);
     }
-    #mobilemenu_check:checked ~ .mobilemenu_content{
-        left: 0;
+    /* menu slide */
+    #mobilemenu_Checkbox:checked ~ .mobilemenu_content{
+        left: 30%;
     }
+    /* menu area */
     .mobilemenu_content{
-        width: 50%;
+        width: 70%;
         height: 100%;
         position: fixed;
         top: 0;
         left: 100%;
         z-index: 80;
+        padding: 5em 3% 2em;
         background-color: white;
         transition: all 0.5s;
     }
     .mobilemenu_list{
         padding: 70px 10px 0;
     }
+    /* menu open => background */
+    .mobilemenu-background{
+    display: none;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0;
+    transition: all 0.5s ease-in-out 0s;        
+    }
+    .mobilemenu_input:checked ~ .mobilemenu-background{
+    display: block;
+    opacity: 0.3;
+    }
+    /* MENU,REWARDS,GIFT CARDS */
     .mobilemenu_item{
-        border-bottom: solid 1px #ffffff;
+        margin: 50px 15px;
         list-style: none;
     }
-    .mobilemenu_link {
-        display: block;
-        width: 100%;
-        font-size: 15px;
-        box-sizing: border-box;
-        color: #ffffff;
-        text-decoration: none;
-        padding: 9px 15px 10px 0;
+    /* Sign in,Join now */
+    .mobilemenu_btn{
+        display: flex;
+    }
+    .signin_mobile_btn{
+        margin: 50px 0 50px 15px;
+    }
+    .joinnow_mobile_btn{
+        margin: 50px 30px;
+    }
+    /* Find a Store */
+    .find_a_store{
+        margin-left: 15px;
+    }
+    /* line */
+    hr{
+        margin: 30px auto;
+        width: 75%;
+        height: 3px;
+        border: none;
+        background-color: rgb(214, 214, 214);
     }
 }
 /* pc */
