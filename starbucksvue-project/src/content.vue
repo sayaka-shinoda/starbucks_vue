@@ -6,11 +6,11 @@
     const hbd_button = ref('Join the celebration')
     // Pumpkin forever
     const pumpkin_forever = ref('Pumpkin forever')
-    const pumpkin_text = ref('Let the nostalgia begin. Enjoy a \n steamy creamy Pumpkin Spice \n Latte topped with pumpkin-pie \n spices.')
+    const pumpkin_text = ref('Let the nostalgia begin. Enjoy a steamy \n creamy Pumpkin Spice Latte topped with \n pumpkin-pie spices.')
     const pumpkin_button = ref('Order now')
     // We’re celebrating PSL’s birthday.Yours is next!
     const birthday = ref('We’re celebrating PSL’s birthday.Yours is \n next!')
-    const birthday_text = ref('Join Starbucks® Rewards and enjoy a free \n drink on your birthday every year.*')
+    const birthday_text = ref('Join Starbucks® Rewards and enjoy a free drink on your \n birthday every year.*')
     const birthday_button = ref('Join now')
     // Twice the spice
     const spice = ref('Twice the \n spice')
@@ -28,6 +28,8 @@
 <head>
     <meta name="viewport" content="width=device-width">
 </head>
+    <!-- first line -->
+    <hr>
     <div class="content">
     <!-- HBD PSL -->
     <div class="first_content">
@@ -80,54 +82,63 @@
 </template>
 
 <style scoped>
+    *{
+        font-family: SoDoSans;
+    }
+    /* first line */
+    hr{
+        margin: 50px 0;
+        width: 100%;
+        height: 3px;
+        border: none;
+        background-color: rgb(214, 214, 214);
+    }
     .first_content,.second_content,.third_content,.fourth_content,.fifth_content{
         display: flex;
-        margin: 30px;
+        width: 100%;
+        height: auto;
+        margin: 30px 0;
+        justify-content: center;
     }
     .first_content_img,.third_content_img,.fifth_content_img{
-        width: 600px;
-        height: 100%;
+        width: 50%;
+        height: auto;
     }
     .second_content_img,.fourth_content_img{
-        width: 600px;
-        height: 100%;
+        width: 50%;
+        height: auto;
     }
     .first_content_text{
-        width: 600px;
-        height: 520px;
-        padding: 100px;
+        width: 50%;
+        height: auto;
         text-align: center;
         background-color: #006241;
     }
     .second_content_text{
-        width: 600px;
-        height: 520px;
-        padding: 100px;
+        width: 50%;
+        height: auto;
         text-align: center;
         background-color: rgb(176 74 90);
     }
     .third_content_text{
-        width: 700px;
-        height: 233px;
+        width: 50%;
+        height: auto;
         text-align: center;
         background-color: rgb(30 57 50);
     }
-    .third_content_text h1{
-        font-size: 25px;
-    }
     .fourth_content_text{
-        width: 600px;
-        height: 520px;
-        padding: 100px;
+        width: 50%;
+        height: auto;
         text-align: center;
         background-color: rgb(214 154 45);
     }
     .fifth_content_text{
-        width: 600px;
-        height: 350px;
+        width: 50%;
+        height: auto;
         text-align: center;
         background-color: rgb(30 57 50);
     }
+    /* button */
     .hbd_btn{
         border: 1px solid white;
         border-radius: 100px;
@@ -138,12 +149,12 @@
         color: white;
         background-color: #006241;
         text-align: center;
-        margin: 50px 110px;
-}
+        margin: auto;
+    }
 .hbd_btn:hover{
         color: white;
         background-color: rgb(0 78 52);
-}
+    }
     .pumpkin_btn{
         border: 1px solid white;
         border-radius: 100px;
@@ -154,8 +165,8 @@
         color: white;
         background-color: rgb(176 74 90);
         text-align: center;
-        margin: 50px 130px;
-}
+        margin: auto;
+    }
     .pumpkin_btn:hover{
         color: white;
         background-color: rgb(141 59 72);
@@ -170,7 +181,7 @@
         color: black;
         background-color: rgb(214 154 45);
         text-align: center;
-        margin: 50px 110px;
+        margin: auto;
     }
     .spice_btn:hover{
         color: black;
@@ -186,26 +197,21 @@
         color: white;
         background-color: rgb(30 57 50);
         text-align: center;
-        margin: 30px 230px;
+        margin: auto;
     }
     .birthday_btn:hover,.delivered_btn:hover{
         color: white;
         background-color: rgb(24 46 40);
     }
     .Benefits-text{
-        margin: 50px 350px;
-        font-family: SoDoSans;
+        font-size: medium;
+        margin: 50px auto;
+        text-align: center;
     }
     div{
         white-space: pre-line;
     }
-    h1{
-        font-family: SoDoSans;
-        font-size: 45px;
-    }
-    p{
-        margin: 20px 0;
-    }
+        
     /* mobile */
     @media screen and (max-width:375px){
     .first_content,.second_content,.third_content,.fourth_content,.fifth_content{
@@ -223,19 +229,81 @@
     .first_content_text,.second_content_text,.fourth_content_text{
         height: 600px;
     }
-    .third_content_text,.fifth_content_text{
-        height: 500px;
+    .third_content_text{
+        height: 350px;
     }
-    .hbd_btn,.pumpkin_btn,.birthday_btn,.spice_btn,.delivered_btn{
-        margin: auto;
+    .fifth_content_text{
+        height: 450px;
     }
-    .Benefits-text{
-        text-align: center;
-        margin: auto;
+    /* font */
+    /* first,second,fourth */
+    .first_content_text h1,
+    .second_content_text h1,
+    .fourth_content_text h1{
+        font-size: 60px;
+        margin-top: 10%;
+    }
+    .first_content_text p,
+    .second_content_text p,
+    .fourth_content_text p{
+        font-size: 30px;
+        margin: 30px;
+        margin-bottom: 50px;
+    }
+    /* third */
+    .third_content_text h1{
+        font-size: 35px;
+        margin-top: 5%;
+    }
+    .third_content_text p{
+        font-size: 20px;
+        margin: 15px;
+        margin-bottom: 30px;
+    }
+    /* fifth */ 
+    .fifth_content_text h1{
+        font-size: 50px;
+        margin-top: 10%;
+    }
+    .fifth_content_text p{
+        font-size: 30px;
+        margin: 30px;
+        margin-bottom: 35px;
     }
     }
     /* pc */
-    @media screen and (min-width:1200px) {
-
+    @media screen and (min-width:375px) {
+/* font */
+    /* first,second,fourth */
+    .first_content_text h1,
+    .second_content_text h1,
+    .fourth_content_text h1{
+        font-size: 45px;
+        margin-top: 15%;
+    }
+    .first_content_text p,
+    .second_content_text p,
+    .fourth_content_text p{
+        font-size: large;
+        margin: 30px;
+    }
+    /* third */
+    .third_content_text h1{
+        font-size: 23px;
+        margin-top: 2%;
+    }
+    .third_content_text p{
+        font-size: medium;
+        margin: 10px;
+    }
+    /* fifth */ 
+    .fifth_content_text h1{
+        font-size: 25px;
+        margin-top: 15%;
+    }
+    .fifth_content_text p{
+        font-size: medium;
+        margin: 30px;
+    }
     }
 </style>
