@@ -45,6 +45,8 @@
 
 <template>
     <div class="info">
+    <!-- second line -->
+    <hr>
     <!-- pc menu -->
     <div class="info_pc" width="100%">
     <!-- About Us pc menu -->
@@ -166,6 +168,8 @@
         <p><a href="https://athome.starbucks.com/?utm_source=starbucks.com&utm_medium=referral&utm_campaign=footer">Explore and Find Coffee for Home</a></p>
     </details>
     </div>
+    <!-- third line -->
+    <hr>
     <!-- SNS icon -->
     <ul style="list-style: none;" class="sns_icon">
         <li><a href="https://open.spotify.com/user/starbucks"><img src="@/assets/spotify_icon.svg" alt="Spotify"></a></li>
@@ -245,6 +249,14 @@
     }
     .subinfo a{
         color: black;
+    }
+    /* line */
+    hr{
+    margin: 50px 0;
+    width: 100%;
+    height: 3px;
+    border: none;
+    background-color: rgb(214, 214, 214);
     }
     /* mobile */
     @media screen and (max-width:375px){
