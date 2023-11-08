@@ -204,11 +204,15 @@
         display: flex;
     }
     .info-title{
-        margin: 20px 30px;
+        width: 100%;
+        margin-top: 20px;
+        margin-right: 100px;
         font-size: 17px;
     }
    .info-text{
-        margin: 20px 30px;
+        width: 100%;
+        margin-top: 20px;
+        margin-right: 100px;
         color: rgb(118, 118, 118);
    }
    .info-text:hover{
