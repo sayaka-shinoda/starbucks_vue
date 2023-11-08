@@ -322,6 +322,18 @@
         .info_pc{
             width: auto;
         }
+        .sns_icon img{
+            width: 45px;
+            height: 45px;
+            margin-right: 10px;
+            border-radius: 50%;
+            padding: 5px;
+            transition: all 0.5s;
+        }
+        .sns_icon img:hover{
+            border-radius: 50%;
+            background-color: rgb(222, 222, 222);
+        }
         .subinfo ul{
             list-style-type: none;
             margin: 20px auto 0;
